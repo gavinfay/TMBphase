@@ -58,7 +58,7 @@ TMBphase <- function(data, parameters, random, model_name,
 
   # compile the model
   TMB::compile(paste0(model_name,".cpp"))
-  dyn.load(dynlib(model_name))
+  dyn.load(TMB::dynlib(model_name))
   DLL_use <- model_name  
   
   #loop over phases
