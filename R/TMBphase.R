@@ -89,11 +89,11 @@ TMBphase <- function(data, parameters, random, model_name,
     # Fit the model
     obj <- TMB::MakeADFun(data,params_use,random=random_use,DLL=DLL_use,map=map_use)  
     #obj <- TMB::MakeADFun(data,params_use,DLL=DLL_use,map=map_use)
-    newtonOption(obj,smartsearch=FALSE)
+    TMB::newtonOption(obj,smartsearch=FALSE)
     #obj$fn()
     #obj$gr()
     opt <- nlminb(obj$par,obj$fn,obj$gr)
-    rep <- sdreport(obj)
+    rep <- TMB::sdreport(obj)
     rep
   
   #close phase loop
