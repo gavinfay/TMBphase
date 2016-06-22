@@ -38,6 +38,7 @@
 #'    logQ=2,
 #'    logR=1
 #'  )
+#'  TMBphase(data, parameters, random, model_name, optimizer = "nlminb")
 
 TMBphase <- function(data, parameters, random, model_name,
                      optimizer = "nlminb") {
