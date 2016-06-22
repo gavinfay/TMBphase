@@ -1,7 +1,7 @@
 Package: TMBphase
 Title: Fits TMB models using phases
 Version: 0.0.0.9000
-Authors@R: person(Gavin, Fay, email = "gfay42@gmail.com", role = c("aut", "cre"))
+Authors@R: person("Gavin", "Fay", email = "gfay42@gmail.com", role = c("aut", "cre"))
 Description: Fits TMB models using phases
 Depends: R (>= 3.2.3)
 License: GPL-2
